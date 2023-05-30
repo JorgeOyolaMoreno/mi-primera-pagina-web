@@ -82,11 +82,6 @@ section {
   min-height: calc(100vh - 40px);
 }
 
-.column {
-  flex: 1;
-  padding: 10px;
-}
-
 h1 {
   font-family: Arial;
   text-align: center;
@@ -114,48 +109,6 @@ p {
   width: 30%;
 }
 
-/* footer {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  background: #333;
-  color: #fff;
-  position: relative;
-  bottom: 0;
-}
-
-footer p {
-  font-size: 0.6em;
-  white-space: nowrap;
-}
-
-.botones {
-  display: flex;
-  width: 100%;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.botones button {
-  padding: 1em;
-  font-size: 1em;
-  border: none;
-  background: darkred;
-  color: hotpink;
-  font-weight: bold;
-  border-radius: 20px;
-  cursor: pointer;
-}
-
-.botones button:hover {
-  transform: scale(0.7);
-  transition: all 1s;
-  box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.9);
-} */
-
-
-
-/* Estilos para el footer */
 footer {
   background-color: #333;
   font-size: 14px;
@@ -171,7 +124,7 @@ footer p {
   text-align: left;
   margin: 0;
   padding: 5px 20px;
-  color:#f9dada
+  color:#f9dada;
 }
 
 .botones {
@@ -179,7 +132,7 @@ footer p {
   justify-content: center;
   align-items: center;
   margin-top: 10px;
-  padding-bottom:20px;
+  padding-bottom: 20px;
 }
 
 button {
@@ -203,7 +156,6 @@ button:hover {
   background-color: #f7d7c4;
   color: #222;
 }
-
 
 @media (max-width: 768px) {
   .column {
@@ -243,4 +195,25 @@ button:hover {
     gap: 70px;
     font-size: 40px;
   }
+}
+
+.servicios {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.servicio {
+  width: calc(33.33% - 20px);
+  margin-bottom: 20px;
+}
+
+.servicio img {
+  width: 100%;
+  height: auto;
+}
+
+.servicio img:hover {
+  transform: scale(2);
 }
