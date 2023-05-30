@@ -68,11 +68,7 @@
     display:grid;
     place-content: center;
   }
-  .container {
-    max-width: 800px;
-    margin: auto;
-    padding: 20px;
-  }
+
   
   .row {
     margin: 10px;
@@ -81,8 +77,10 @@
   }
   
   .container{
+    max-width: 800px;
+    padding: 20px;
     background: rgba(238, 232, 170,0.7);
-    margin-top:20px;
+    margin:20px auto;
     min-height: calc(100vh - 40px);
   }
   
@@ -103,6 +101,11 @@
     font-size: 18px;
     margin: 20px;
     padding: 10px;
+  }
+
+
+  .greetings{
+    text-align: center;
   }
 
   footer{
