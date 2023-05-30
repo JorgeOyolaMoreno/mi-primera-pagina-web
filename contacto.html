@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi primera web</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="left">
+        <img
+          class="logo"
+          src="walking-dachshund-dog-illustration-by-Vexels.png"
+          alt="Logo"
+        />
+      </div>
+      <nav class="right">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+      <button class="button-menu-toggle">Menu</button>
+    </header>
+    <div class="container">
+      <form id="myForm">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Email"
+          required
+        />
+        <button type="submit" id="submit">Enviar</button>
+      </form>
+    </div>
+
+    <footer>
+      <p>todos los derechos reservados &copy;</p>
+      <div class="botones">
+        <button onclick="showAlert()">Haz click 1</button>
+        <button id="boti">Haz click 2</button>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

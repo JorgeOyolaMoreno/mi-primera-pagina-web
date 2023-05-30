@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-image: url(pastel-polvo-azul-fondo-flores-dibujadas-mano_52683-41004.avif);
+    color: darkblue;
+    font-family: monospace;
+    font-weight: bold;
+    font-size:20px;
+  }
+  
+  header {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .left {
+    flex: 1;
+  }
+  
+  .logo {
+    width: 80px;
+  }
+  
+  nav {
+    width: 60%;
+    text-align: center;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px;
+    font-size: 1.5em;
+  }
+  
+  nav a:hover {
+    color: #1BF7DE;
+  }
+  
+  .button-menu-toggle{
+    display:none;
+  }
+
+
+  section{
+    margin:30px 0;
+    padding:10px 0;
+  }
+
+  .video{
+    display:grid;
+    place-content: center;
+  }
+  .container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .row {
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .container{
+    background: rgba(238, 232, 170,0.7);
+    margin-top:20px;
+    min-height: calc(100vh - 40px);
+  }
+  
+  .column {
+    flex: 1;
+    padding: 10px;
+    
+  }
+  
+  h1 {
+    font-family: Arial;
+    text-align: center;
+    font-size: 36px;
+  }
+  
+  p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    margin: 20px;
+    padding: 10px;
+  }
+
+  footer{
+    display:flex;
+    width:100%;
+    justify-content:space-between;
+    background: #333;
+    color: #fff;
+   position: relative;
+   bottom:0;
+  }
+
+  footer p{
+    font-size: 0.6em;
+    white-space: nowrap;
+    
+  }
+
+  .botones{
+    display:flex;
+    width:100%;
+    justify-content:space-around;
+    align-items: center;
+  }
+
+  .botones button{
+    padding:1em;
+    font-size: 1em;
+    border:none;
+    background: darkred;
+    color:hotpink;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor:pointer;
+  }
+
+  .botones button:hover{
+    transform:scale(0.7);
+    transition: all 1s;
+    box-shadow:1rem 1rem 1rem rgba(0,0,0,0.9)
+  }
+
+
+  .imagenes{
+    display: flex;
+    width: 100%;
+    justify-content:space-between;
+  }
+
+  .imagenes img{
+    width:30%;
+  }
+
+
+
+  
+  @media (max-width: 768px) {
+    .column {
+      flex: 100%;
+    }
+
+    nav{
+        font-size: 16px;
+    }
+
+    nav ul{
+        display:none;
+    }
+
+    .button-menu-toggle {
+        display: block;
+        background-color: white;
+        border:none;
+        border-radius: 50px;
+        padding: 0 24px;
+        font-family: monospace;
+        font-weight: bold;
+        font-size: 20px;
+      }
+
+      .nav-links.nav-links-responsive {
+        position: absolute;
+        display: flex;
+        background-color: rgba(20,20,20,0.95);
+        width: 100%;
+        height: 100%;
+        top: 70px;
+        left: 0;
+        flex-direction: column;
+        padding-top: 150px;
+        align-items: center;
+        gap:70px;
+        font-size: 40px;
+    
+    
+      }
+  }
+  
+
+  
